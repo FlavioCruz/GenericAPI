@@ -234,16 +234,14 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
-    <Compile Include="BusinessFacade\Entities\BookSubjectBusinessFacade.cs" />
-    <Compile Include="BusinessFacade\Interfaces\IBookSubjectBusinessFacade.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controller\Entities\PublisherController.cs" />
     <Compile Include="Controller\Entities\BookSubjectController.cs" />
     <Compile Include="Controller\ViewsControllers\BookSubjectController.cs" />
-    <Compile Include="DataAccessSQLServer\Entities\BookSubjectDataAccessSqlServer.cs" />
-    <Compile Include="DataAccessSQLServer\Interfaces\IBookSubjectDataAccessSqlServer.cs" />
-    <Compile Include="DataAccessSQLServer\Utils\Querys.cs" />
+    <Compile Include="Controller\ViewsControllers\PublisherViewController.cs" />
+    <Compile Include="Database\Querys.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -267,7 +265,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DB.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Entities\AuthorDTO.cs" />
+    <Compile Include="Models\Entities\BookDTO.cs" />
     <Compile Include="Models\Entities\BookSubjectDTO.cs" />
+    <Compile Include="Models\Entities\PublisherDTO.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
@@ -357,6 +358,11 @@
     <Content Include="Views\BookSubject\Details.cshtml" />
     <Content Include="Views\BookSubject\Edit.cshtml" />
     <Content Include="Views\BookSubject\Index.cshtml" />
+    <Content Include="Views\PublisherView\Create.cshtml" />
+    <Content Include="Views\PublisherView\Delete.cshtml" />
+    <Content Include="Views\PublisherView\Details.cshtml" />
+    <Content Include="Views\PublisherView\Edit.cshtml" />
+    <Content Include="Views\PublisherView\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

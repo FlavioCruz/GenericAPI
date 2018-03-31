@@ -1,0 +1,50 @@
+﻿@model BookStoreAPI.Models.Entities.PublisherDTO
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PublisherDTO</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ADDRESS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ADDRESS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ADDRESS_NUMBER)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ADDRESS_NUMBER)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ADDRESS_NUMBER_COMPL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ADDRESS_NUMBER_COMPL)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,5 +1,5 @@
-﻿using BookStoreAPI.BusinessFacade.Entities;
-using BookStoreAPI.DataAccessSQLServer.Utils;
+﻿//using BookStoreAPI.BusinessFacade.Entities;
+//using BookStoreAPI.DataAccessSQLServer.Utils;
 using BookStoreAPI.Models.DB;
 using BookStoreAPI.Models.Entities;
 using GenericAPIModule.BusinessFacade.Entities;
@@ -25,22 +25,25 @@ namespace BookStoreAPI.Controller.Entities
             return await base.ListAll(db, query, args);
         }
 
-        //public async Task<BookSubjectDTO> InsertBookSubject(HttpRequestMessage request)
-        //{
-        //    SetBusinessFacade();
-        //    return await Insert();
-        //}
+        public async Task<BookSubjectDTO> ListBookSubject(string query, params object[] args)
+        {
+            return await base.List(db, query, args);
+        }
 
-        //public async Task<BookSubjectDTO> UpdateBookSubject(HttpRequestMessage request)
-        //{
-        //    SetBusinessFacade();
-        //    return await Update(query, args);
-        //}
 
-        //public async Task<BookSubjectDTO> DeleteBookSubject(HttpRequestMessage request)
-        //{
-        //    SetBusinessFacade();
-        //    return await Delete();
-        //}
+        public async Task<BookSubjectDTO> InsertBookSubject(string query, params object[] args)
+        {
+            return await base.List(db, query, args);
+        }
+
+        public async Task<BookSubjectDTO> UpdateBookSubject(string query, params object[] args)
+        {
+            return await base.Update(db, query, args);
+        }
+
+        public async Task<BookSubjectDTO> DeleteBookSubject(string query, params object[] args)
+        {
+            return await base.Delete(db, query, args);
+        }
     }
 }

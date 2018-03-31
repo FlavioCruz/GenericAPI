@@ -28,5 +28,7 @@ namespace BookStoreAPI.Models.DB
         public virtual DbSet<BOOK_SUBJECT> BOOK_SUBJECT { get; set; }
 
         public System.Data.Entity.DbSet<BookStoreAPI.Models.Entities.BookSubjectDTO> BookSubjectDTOes { get; set; }
+
+        public System.Data.Entity.DbSet<BookStoreAPI.Models.Entities.PublisherDTO> PublisherDTOes { get; set; }
     }
 }
